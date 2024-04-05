@@ -1,0 +1,11 @@
+ * {
+        /* margin: 0; */
+        padding: 0;
+      }
+      .pixel {
+        box-sizing: border-box;
+        border: 2px solid black;
+        background-color: aqua;
+        margin: 25vw 25vw;
+        /* width: 100vw; */
+      }
