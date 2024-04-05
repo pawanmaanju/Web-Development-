@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>CSS Selectors MasterClass</title>
+    <style>
+      /* Element Selector */
+      h1 {
+        background-color: red;
+        font-size: 17px;
+        font-family: Verdana;
+      }
+      /* Class Selector */
+      .Red {
+        color: blue;
+      }
+      /* ID Selector */
+      #categories {
+        background-color: bisque;
+      }
+      /* Child Selector */
+      div > p {
+        color: cadetblue;
+        font-size: 13px;
+      }
+
+      div > h1 {
+        font-size: 15px;
+        font-family: Courier New;
+      }
+    /* Descendant Selector */
+    div article {
+        color: brown;
+    }
+    /* Universal Selector */
+    *{
+        margin: 0;
+        padding: 0;
+    }
+    /* Pseudo Selector */
+ a:visited{
+    color: rgb(255, 0, 0);
+    background-color: blue;
+ }
+ a:link{
+  color: rgb(21, 255, 0);
+ }
+ a:active{
+  color: blueviolet;
+ }
+ a:hover{
+  background-color: cyan;
+ }
+ p:first-child{
+  color: rgb(249, 0, 141);
+ }
+    </style>
+  </head>
+  <body>
+    <main>
+      <p>First Child</p>
+      <p>Second Child</p>
+    </main>
+    <h1>CSS Selectors</h1>
+    <div class="Red">
+      CSS selectors are used to "find" (or select) the HTML elements you want to
+      style.
+    </div>
+    <hr />
+
+    <div id="categories">
+      <h1>We can divide CSS selectors into five categories:</h1>
+      <p>
+        1 Simple selectors (select elements based on name, id, class) 2
+        Combinator selectors (select elements based on a specific relationship
+        between them) 3 Pseudo-class selectors (select elements based on a
+        certain state) 4 Pseudo-elements selectors (select and style a part of
+        an element) 5 Attribute selectors (select elements based on an attribute
+        or attribute value)
+      </p>
+    </div>
+    <div>
+      <span>
+        <p>
+          <article>
+              This page will explain the most basic CSS selectors.
+            </article>
+        </p>
+      </span>
+    </div>
+
+    <a href="https://searchmaro.in/"> Search Maro </a>
+  </body>
+</html>

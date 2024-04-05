@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="stylesheet" href="style.css" />
+    <title>CSS Fonts, Text & Color Properties</title>
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap");
+      .p1 {
+        color: red;
+        font-family: Poppins;
+        font-style: italic;
+        font-weight: 600;
+      }
+      .hd1 {
+        color: blueviolet;
+        font-family: Bebas Neue; /*  this is Imported Font */
+      }
+      .hd2 {
+        color: aqua;
+        /* This is border For Font */
+        text-shadow: -1px 0 0 #000, /* 1px left shadow */ 0 1px 0 #ff0000,
+          /* 1px top shadow */ 1px 0 0 #000,
+          /* 1px right shadow */ 0 -1px 0 #000; /* 1px bottom shadow */
+      }
+      .p2 {
+        line-height: 200%; /*this is line hight spacing between line */
+        /* Letter Space :  */
+        letter-spacing: 1px;
+      }
+      .hd3 {
+        color: #ff0000;
+        font-size: 25px;
+        /* this is use for letter first letter is capital  */
+        text-transform: capitalize;
+        text-decoration: underline;
+        text-decoration-color: #0f8676;
+        text-decoration-style: dotted;
+      }
+      .p3 {
+        text-transform: lowercase;
+      }
+    </style>
+  </head>
+  <body>
+    <div>
+      <h1 class="hd1">Fonts</h1>
+      <p class="p1">
+        Font Selection is Important Choosing the right font has a huge impact on
+        how the readers experience a website. The right font can create a strong
+        identity for your brand. Using a font that is easy to read is important.
+        The font adds value to your text. It is also important to choose the
+        correct color and text size for the font.
+      </p>
+      <h1 class="hd2">Generic Font Families</h1>
+
+      <p class="p2">
+        Serif fonts have a small stroke at the edges of each letter. They create
+        a sense of formality and elegance. Sans-serif fonts have clean lines (no
+        small strokes attached). They create a modern and minimalistic look.
+        Monospace fonts - here all the letters have the same fixed width. They
+        create a mechanical look. Cursive fonts imitate human handwriting.
+        Fantasy fonts are decorative/playful fonts.
+      </p>
+    </div>
+    <div>
+      <h3 class="hd3">Lorem ipsum dolor sit amet.</h3>
+      <p class="p3">
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repellat
+        dicta, nesciunt voluptates dolor optio voluptatibus ad saepe? Amet
+        eligendi praesentium voluptatibus eum, qui saepe officiis minima nisi
+        provident laudantium dignissimos?
+      </p>
+    </div>
+    <p>Lorem <mark style="color: red">hello World!</mark> ipsum sit amet.</p>
+    <p>Lorem <q>hello World!</q> ipsum sit amet.</p>
+    
+  </body>
+</html>

@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Input AND Form</title>
+  </head>
+  <body>
+    <div class="form">
+      <form action="Post">
+        <div>
+          <h1
+            style="font-size: 13px; color: rgb(0, 110, 255)"
+            title="Choose the DOB"
+          >
+            Enter The user Name
+          </h1>
+          <input
+            type="text"
+            name="UserName"
+            id="UserName"
+            placeholder="Enter The User Name"
+            required
+          />
+        </div>
+
+        <div>
+          <h1
+            style="font-size: 13px; color: rgb(0, 110, 255)"
+            title="Choose the DOB"
+          >
+            Enter Your Email
+          </h1>
+          <input
+            type="email"
+            name="email"
+            placeholder="Enter The Email"
+            required
+          />
+        </div>
+        <div>
+          <h1
+            style="font-size: 15px; color: rgb(0, 110, 255)"
+            title="Choose the Gender"
+          >
+            Gender
+          </h1>
+          <input type="radio" id="Male" name="Gender" value="Male" required />
+          <label for="Male" style="font-family: serif">Male</label>
+          <input
+            type="radio"
+            id="Female"
+            name="Gender"
+            value="Female"
+            required
+          />
+          <label for="Female" style="font-family: serif">Female</label>
+        </div>
+        <div>
+          <h1
+            style="font-size: 13px; color: rgb(0, 110, 255)"
+            title="Choose the DOB"
+          >
+            Enter Your Date Of Birth
+          </h1>
+          <input
+            type="date"
+            name="DOB"
+            placeholder="Enter the Date of birth"
+            required
+          />
+        </div>
+        <br />
+        <!-- Label -->
+        <label for="UserName"></label>
+        <div>
+          <textarea name="Comment" id="" cols="30" rows="10">
+...Enter Your Massage Here ....
+    </textarea
+          >
+        </div>
+        <br />
+        <button
+          onclick="location.href"
+          ="thanks.html"
+          style="font-family: Verdana"
+        >
+          Submit
+        </button>
+      </form>
+    </div>
+  </body>
+</html>
