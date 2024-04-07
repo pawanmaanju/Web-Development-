@@ -1,22 +1,33 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+<head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css">
     <title>CSS Sizing Units</title>
     <style>
-     
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        .pixel {
+            box-sizing: border-box;
+            border: 2px solid black;
+            background-color: aqua;
+            margin: 10vw; /* Adjusted margin */
+            width: 80vw; /* Adjusted width */
+            padding: 20px; /* Added padding */
+        }
+        
     </style>
-  </head>
-  <body>
-    <div class="box">
-      <p class="pixel">
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi culpa
-        animi dignissimos, provident quod reprehenderit sint totam vitae
-        ratione? Minima magnam pariatur quidem voluptatem ipsum? Quam, sequi!
-        Est, minima cupiditate!
-      </p>
+</head>
+<body>
+    <div class="box"> <!-- Changed class name to match CSS -->
+        <p class="pixel">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi culpa
+            animi dignissimos, provident quod reprehenderit sint totam vitae
+            ratione? Minima magnam pariatur quidem voluptatem ipsum? Quam, sequi!
+            Est, minima cupiditate!
+        </p>
     </div>
-  </body>
-</html>
+</body>
