@@ -46,6 +46,10 @@
  a:hover{
   background-color: cyan;
  }
+ /* first-child selector */
  p:first-child{
+  color: rgb(249, 0, 141);
+ }
+p:nth-child(2){
   color: rgb(249, 0, 141);
  }

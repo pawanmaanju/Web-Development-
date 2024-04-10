@@ -1,0 +1,14 @@
+.green{
+    background-color: green;
+}
+/* !important tag */
+button{
+    background-color: aqua!important;
+    font-size: 30px;
+    border-radius: 50px;
+/* 
+    -webkit-border-radius: 50px;
+    -moz-border-radius: 50px;
+    -ms-border-radius: 50px;
+    -o-border-radius: 50px; */
+}
