@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      /* CSS styles */
+      .img {
+        /* Styling for images */
+        height: 300px; /* Set the height of the image */
+        box-shadow: 9px 12px 20px 8px rgb(19, 19, 77); /* Apply a box shadow effect */
+      }
+      .text {
+        /* Styling for text */
+        padding: 20px; /* Add padding around the text */
+        text-shadow: 1px 2px 2px rgb(255, 0, 0); /* Apply a text shadow effect */
+      }
+      .box {
+        /* Styling for the box */
+        border: 2px solid black; /* Add a border around the box */
+        margin-top: 50px; /* Add margin space at the top of the box */
+        box-shadow: inset 15px 3px 5px 1px orange; /* Apply an inset box shadow effect */
+        padding-bottom: 20px;
+      }
+      /* Outline out from text area */
+      .outline{
+        margin: 50px;
+        
+        outline: 2px solid green;
+        outline-offset: 15px;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- HTML content -->
+    <div class="text">
+      <!-- Text content -->
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci, quasi!
+    </div>
+
+    <div class="im">
+      <!-- Typo in class name, should be "img" instead of "im" -->
+      <!-- Apply the styles defined for images -->
+      <img
+        class="img"
+        src="https://searchmaro.in/wp-content/uploads/2024/04/Ai-Is3.png"
+        alt="no img"
+      />
+      <!-- Alternate text for accessibility -->
+    </div>
+
+    <div class="box">hello</div>
+    <!-- Apply the styles defined for the box -->
+
+    <div class="outline">Hello World</div>
+  </body>
+</html>
