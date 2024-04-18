@@ -8,6 +8,10 @@
         :root{
          --color: rgba(0, 255, 17, 0.592);
          --secolor:rgb(43, 255, 0);
+         --thcolor:rgb(255, 0, 183);
+         --defop:0.5;
+         --defpad:2px;
+
             
         }
         *{
@@ -18,8 +22,8 @@
         background-color: var(--color)
     }
     .container{
-        background-color: var(--secolor)
-
+        background-color: var(--secolor);
+        
     }
     ul{
         display: flex;
@@ -27,6 +31,29 @@
     ul li{
         list-style: none;
         padding: 12px;
+    }
+    ul li:first-child{
+        --color: rgb(255, 119, 0);
+        background-color: var(--color);
+        
+        
+    }
+    
+    
+    ul li:nth-child(n+1){
+        padding: var(--defpad);
+        --color: rgb(190, 90, 9);
+        background-color: var(--color,blue);
+        border: 3px solid var(--thcolor);
+        
+        
+        
+    }
+    p{
+        opacity: var(--defop);
+        color: red;
+        background: darkblue;
+
     }
     </style>
 </head>
@@ -41,5 +68,6 @@
 <div class="container">
 Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eligendi mollitia tenetur expedita officiis itaque rerum possimus. Reiciendis numquam aspernatur facilis iure aut modi recusandae illo quia blanditiis expedita reprehenderit ullam voluptatibus laudantium dolorem, facere deserunt necessitatibus natus harum, temporibus quidem neque corrupti vitae nihil. Qui architecto perspiciatis adipisci tempore cumque vitae cum laborum.
 </div>
+<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium, numquam.</p>
 </body>
 </html>
