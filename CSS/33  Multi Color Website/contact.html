@@ -7,13 +7,27 @@
     <style>
       :root {
         --color: rgb(255, 255, 255);
-        --bgcolor: rgb(160, 88, 196);
-        --bbg: rgb(211, 186, 231);
+        --bgcolor: rgb(255, 89, 139);
+        /* --bbg: rgb(48, 55, 97); */
+        --bbg: linear-gradient(
+          to bottom right,
+          rgb(25, 31, 97),
+          rgb(48, 55, 97)
+        );
+        --inback: rgb(81, 91, 132);
+
         --ffm: poppins;
       }
       body {
+        background: var(--bgcolor);
         font-family: var(--ffm);
-        background: var(--bbg);
+      }
+      .mainbox {
+        border: 2px solid black;
+        border-radius: 12px;
+        box-shadow: 2px 03px 20px black;
+        background-image: var(--bbg);
+        padding-bottom: 20px;
       }
 
       form {
@@ -26,66 +40,112 @@
         text-align: center;
       }
       .box input {
-        border-radius: 5px;
-        background-color: rgb(255, 255, 255);
+        border-radius: 7px;
+        background-color: var(--inback);
       }
 
       .box input {
+        border: none;
         /* color: aqua; */
         padding: auto;
-        box-shadow:  1px 03px 20px black;
+        /* box-shadow: 1px 03px 20px black; */
 
+        margin: 3px;
       }
       .name input {
         padding: 3px;
-        padding-right: 50px;
+        /* padding-right: 50px; */
       }
       .email input {
         padding: 3px;
-        padding-right: 50px;
-
+        /* padding-right: 50px; */
       }
-      .subject input {
+      .phone input {
         padding: 3px;
         padding-right: 50px;
-
       }
       .MSG input {
         padding: 3px;
 
         padding-bottom: 50px;
-        padding-right: 50px;
+        padding-right: 160px;
       }
       ::placeholder {
-        color: rgb(0, 0, 0);
-        text-shadow: 1px 1px 3px black;
-
+        color: var(--color);
+        font-family: var(--ffm);
+        font-size: 12px;
+        padding: 3px;
+        /* text-shadow: 1px 1px 3px black; */
 
         /* opacity: 1; Firefox */
       }
+      .mainbox p:first-child {
+        color: var(--bgcolor);
+        font-weight: bolder;
+        font-size: 20px;
+      }
+      .mainbox p {
+        color: var(--color);
+      }
+
+      .info p {
+        color: var(--bbg);
+        font-weight: bold;
+      }
+      .info label{
+        font-size: 13px;
+        font-weight: 600;
+        padding: 10px;
+        color: var(--color);
+
+      }
+      .imgc{
+
+width: 20px;
+margin-top: 20px;
+      }
+    
     </style>
   </head>
   <body>
     <div class="heading">
       <h1 class="heading">Contact us</h1>
     </div>
-    <form action="post">
-      <div class="name box">
-        <p>Your Name</p>
-        <input type="text box" placeholder="Enter Your Name" />
+    <div class="padding">
+      <div class="mainbox">
+        <form action="post">
+          <p>Just say Hello !</p>
+          <p>Let us know more about you !</p>
+          <div class="name box">
+            <input type="text" placeholder="First Name" />
+            <input type="text" placeholder="Last Name" />
+          </div>
+          <div class="email box">
+            <!-- <p>Your Email</p> -->
+          </div>
+          <div class="email Phone box">
+            <input type="email" placeholder="Mail" />
+            <input
+              type="tel"
+              id="phone"
+              name="phone"
+              placeholder="Phone"
+              pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}"
+            />
+            <!-- <p>Subject</p> -->
+          </div>
+          <div class="MSG box">
+            <!-- <p>Message</p> -->
+            <input type="text" placeholder="Massage" />
+          </div>
+        </form>
       </div>
-      <div class="email box">
-        <p>Your Email</p>
-        <input type="email" placeholder="Enter Your Email" />
+      <div class="info">
+      <p>Contact Information</p>
+          <img class="imgc" src="https://icons.veryicon.com/png/o/miscellaneous/the-star-of-pai-da-xing/call-26.png" alt="" >
+        <label for="phone">call US :  +919119**5372</label>
+
       </div>
-      <div class="subject box">
-        <p>Subject</p>
-        <input type="text" placeholder="Subject" />
-      </div>
-      <div class="MSG box">
-        <p>Message</p>
-        <input type="text" placeholder="Enter Your Massage" />
-      </div>
-    </form>
+    </div>
   </body>
 </html>
