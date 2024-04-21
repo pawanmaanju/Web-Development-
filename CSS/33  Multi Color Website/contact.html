@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact</title>
+    <style>
+      :root {
+        --color: rgb(255, 255, 255);
+        --bgcolor: rgb(160, 88, 196);
+        --bbg: rgb(211, 186, 231);
+        --ffm: poppins;
+      }
+      body {
+        font-family: var(--ffm);
+        background: var(--bbg);
+      }
+
+      form {
+        padding-left: 50px;
+        padding-top: 50px;
+      }
+      .heading {
+        color: var(--color);
+        text-shadow: 1px 2px 3px black;
+        text-align: center;
+      }
+      .box input {
+        border-radius: 5px;
+        background-color: rgb(255, 255, 255);
+      }
+
+      .box input {
+        /* color: aqua; */
+        padding: auto;
+        box-shadow:  1px 03px 20px black;
+
+      }
+      .name input {
+        padding: 3px;
+        padding-right: 50px;
+      }
+      .email input {
+        padding: 3px;
+        padding-right: 50px;
+
+      }
+      .subject input {
+        padding: 3px;
+        padding-right: 50px;
+
+      }
+      .MSG input {
+        padding: 3px;
+
+        padding-bottom: 50px;
+        padding-right: 50px;
+      }
+      ::placeholder {
+        color: rgb(0, 0, 0);
+        text-shadow: 1px 1px 3px black;
+
+
+        /* opacity: 1; Firefox */
+      }
+    </style>
+  </head>
+  <body>
+    <div class="heading">
+      <h1 class="heading">Contact us</h1>
+    </div>
+    <form action="post">
+      <div class="name box">
+        <p>Your Name</p>
+        <input type="text box" placeholder="Enter Your Name" />
+      </div>
+      <div class="email box">
+        <p>Your Email</p>
+        <input type="email" placeholder="Enter Your Email" />
+      </div>
+      <div class="subject box">
+        <p>Subject</p>
+        <input type="text" placeholder="Subject" />
+      </div>
+      <div class="MSG box">
+        <p>Message</p>
+        <input type="text" placeholder="Enter Your Massage" />
+      </div>
+    </form>
+  </body>
+</html>
