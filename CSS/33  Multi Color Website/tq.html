@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tq</title>
+    <style>
+      :root {
+        --color: rgb(255, 255, 255);
+        --bgcolor: rgb(255, 89, 139);
+        /* --bbg: rgb(48, 55, 97); */
+        --bbg: linear-gradient(
+          to bottom right,
+          rgb(25, 31, 97),
+          rgb(48, 55, 97)
+        );
+        --inback: rgb(81, 91, 132);
+
+        --ffm: poppins;
+      }
+      body {
+        background-color: var(--bgcolor);
+      }
+       @media only screen and (orientation: landscape) {
+        /* Big */
+        .box {
+        margin-top: 20vh;
+        background-image: var(--bbg);
+        border-radius: 12px;
+        border: 2px solid black;
+        text-align: center;
+        font-family: var(--ffm);
+        color: var(--color);
+        font-weight: bold;
+        padding-top: 220px;
+        box-shadow: 3px 5px 30px black;
+        border: none;
+        padding-bottom: 220px;
+      }
+      .main {
+        padding-left: 20%;
+        padding-right: 25%;
+      }
+    }
+     @media screen and (orientation: portrait) {
+      .box {
+        margin-top: 29vh;
+        background-image: var(--bbg);
+        border-radius: 12px;
+        border: 2px solid black;
+        text-align: center;
+        font-family: var(--ffm);
+        color: var(--color);
+        font-weight: bold;
+        padding-top: 50px;
+        box-shadow: 3px 5px 30px black;
+        border: none;
+        padding-bottom: 50px;
+        
+
+      }
+       .main {
+        padding-left: 10%;
+        padding-right: 10%;
+
+      }
+    }
+      .sub {
+        font-size: 30px;
+        text-shadow: 3px 1px 12px rgb(255, 12, 12);
+      }
+      .tq {
+        font-size: 15px;
+        text-shadow: 3px 1px 12px rgb(12, 198, 255);
+
+        padding-bottom: 20px;
+      }
+      
+    </style>
+  </head>
+  <body>
+    <div class="main">
+      <div class="box">
+        <div class="sub">
+          <p>Your Form Submited</p>
+        </div>
+
+        <div class="tq">
+          <p>Thanks For Visit :Search Maro:</p>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

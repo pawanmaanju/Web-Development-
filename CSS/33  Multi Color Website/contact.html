@@ -31,7 +31,7 @@
       }
 
       form {
-        padding-left: 50px;
+        padding-left: 150px;
         padding-top: 50px;
       }
       .heading {
@@ -42,33 +42,35 @@
       .box input {
         border-radius: 7px;
         background-color: var(--inback);
-      }
-
-      .box input {
         border: none;
         /* color: aqua; */
-        padding: auto;
+
+        
+
         /* box-shadow: 1px 03px 20px black; */
 
-        margin: 3px;
+        margin: 4px;
+        margin-left: 20px;
       }
       .name input {
-        padding: 3px;
-        /* padding-right: 50px; */
+        
+        padding: 1vb;
+        
+        /* padding-right: -150px; */
       }
       .email input {
-        padding: 3px;
+        padding: 1vb;
         /* padding-right: 50px; */
       }
       .phone input {
-        padding: 3px;
-        padding-right: 50px;
+        padding: 5;
+        /* padding-right: 50px; */
       }
       .MSG input {
-        padding: 3px;
+        padding: 5px;
 
-        padding-bottom: 50px;
-        padding-right: 160px;
+        padding-bottom: 9vh;
+        padding-right: 31vw;
       }
       ::placeholder {
         color: var(--color);
@@ -83,28 +85,40 @@
         color: var(--bgcolor);
         font-weight: bolder;
         font-size: 20px;
+        padding-left: 20px;
+
       }
       .mainbox p {
         color: var(--color);
+        padding-left: 20px;
+
       }
 
       .info p {
         color: var(--bbg);
         font-weight: bold;
       }
-      .info label{
+      .info label {
         font-size: 13px;
         font-weight: 600;
         padding: 10px;
         color: var(--color);
-
       }
-      .imgc{
-
-width: 20px;
-margin-top: 20px;
+      .imgc {
+        width: 20px;
+        margin-top: 20px;
       }
-    
+      .call {
+        padding: 20px;
+      }
+      .bt {
+        border-radius: 8px;
+        margin-top: 20px;
+        padding: 10px;
+      }
+      .btn {
+        padding-left: 15vb;
+      }
     </style>
   </head>
   <body>
@@ -113,7 +127,7 @@ margin-top: 20px;
     </div>
     <div class="padding">
       <div class="mainbox">
-        <form action="post">
+        <!-- <form action="post"> -->
           <p>Just say Hello !</p>
           <p>Let us know more about you !</p>
           <div class="name box">
@@ -124,7 +138,7 @@ margin-top: 20px;
             <!-- <p>Your Email</p> -->
           </div>
           <div class="email Phone box">
-            <input type="email" placeholder="Mail" />
+            <input type="email" placeholder="Email" />
             <input
               type="tel"
               id="phone"
@@ -138,13 +152,19 @@ margin-top: 20px;
             <!-- <p>Message</p> -->
             <input type="text" placeholder="Massage" />
           </div>
+          <div class="btn">
+            <button class="bt" onclick="location.href='tq.html';" >Submit</button>
+          </div>
         </form>
       </div>
       <div class="info">
-      <p>Contact Information</p>
-          <img class="imgc" src="https://icons.veryicon.com/png/o/miscellaneous/the-star-of-pai-da-xing/call-26.png" alt="" >
-        <label for="phone">call US :  +919119**5372</label>
-
+        <p>Contact Information</p>
+        <img
+          class="imgc"
+          src="https://icons.veryicon.com/png/o/miscellaneous/the-star-of-pai-da-xing/call-26.png"
+          alt=""
+        />
+        <label class="Call" for="phone">call US : +919119**5372</label>
       </div>
     </div>
   </body>
