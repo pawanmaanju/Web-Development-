@@ -1,11 +1,115 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-</head>
-<body>
-    
-</body>
+    <style>
+      :root {
+        --color: rgb(255, 255, 255);
+        --bgcolor: rgb(160, 88, 196);
+        --bbg: rgb(203, 194, 210);
+        --boxmbg: rgb(65, 136, 65);
+        --box1bg: rgb(240, 151, 149);
+        --box2bg: rgb(76, 128, 218);
+      }
+      * {
+        padding: 0;
+        margin: 0;
+      }
+      body {
+        background-color: var(--bbg);
+      }
+      .nav ul li {
+        list-style-type: none;
+        padding: 10px;
+        /* margin: 10px; */
+        display: flex;
+
+        color: var(--color);
+      }
+      .nav{
+        position: fixed;
+        width: 100%;
+        top: 0px;
+        margin: 0;
+        padding: 0;
+        z-index: 1;
+      }
+      ul {
+        background-color: var(--bgcolor);
+        padding: 0;
+        margin: 0;
+        display: flex;
+      }
+      .boxmain {
+        margin-left: 10x;
+        padding-left: 10px;
+        border: 3px solid;
+        box-shadow: 2px 2px 10px 5px rgb(224, 237, 128);
+        margin: 10px;
+
+        
+        height: 70vh;
+        background-color: var(--boxmbg);
+      }
+      .box1 {
+        
+
+        /* margin-left: 10px; */
+        /* padding-left: 10px; */
+        border: 2px solid white;
+        /* box-shadow: 2px 2px 10px 5px rgb(224, 237, 128); */
+        margin: 10px;
+        height: 65vh;
+        width: 45%;
+        background-color: var(--box1bg);
+      }
+      .box2 {
+        /* margin-left: 10px; */
+        /* padding-left: 10px; */
+        border: 2px solid white;
+        /* box-shadow: 2px 2px 10px 5px rgb(224, 237, 128); */
+        margin: 15px;
+
+        height: 65vh;
+        width: 45%;
+        left: 20px;
+        background-color: var(--box2bg);
+        position: relative;
+        left: 50%;
+        top: -95.6%;
+      }
+      .box3 {
+        border: 2px solid black;
+        border-radius: 20px;
+        margin: 5vw;
+        padding: 5vh;
+      }
+      .box3 h1 {
+        text-align: center;
+        padding: 0;
+        margin: 0;
+        font-size: 30px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="nav">
+      <ul>
+        <li>Home</li>
+        <li>About Us</li>
+        <li>Contact Us</li>
+      </ul>
+    </div>
+    <div class="box">
+      <div class="boxmain">
+        <div class="box1"></div>
+        <div class="box2"></div>
+      </div>
+      <div class="box3">
+        <h1>Thanks For Visiting Search Maro</h1>
+      </div>
+    </div>
+  </body>
 </html>
