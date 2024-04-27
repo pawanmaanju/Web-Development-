@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LMC College - Marksheet</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            width: 80%;
+            margin: 20px auto;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        h2 {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        form {
+            width: 100%;
+            margin-bottom: 20px;
+        }
+        label {
+            display: block;
+            margin-bottom: 8px;
+        }
+        input[type="number"] {
+            width: 100%;
+            padding: 8px;
+            margin-bottom: 12px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        th, td {
+            padding: 12px 8px;
+            text-align: left;
+            border-bottom: 1px solid #ddd;
+        }
+        th {
+            background-color: #f2f2f2;
+        }
+        tr:nth-child(even) {
+            background-color: #f9f9f9;
+        }
+        tr:hover {
+            background-color: #f2f2f2;
+        }
+        .fail {
+            color: red;
+        }
+        .pass {
+            color: green;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>LMC College - Marksheet</h2>
+        <form id="marksheetForm">
+            <label for="java">Java Programming:</label>
+            <input type="number" id="java" name="java" min="0" max="100" required><br>
+
+            <label for="networks">Computer Networks:</label>
+            <input type="number" id="networks" name="networks" min="0" max="100" required><br>
+
+            <label for="database">Database System:</label>
+            <input type="number" id="database" name="database" min="0" max="100" required><br>
+
+            <label for="law">E-commerce and Cyber Law:</label>
+            <input type="number" id="law" name="law" min="0" max="100" required><br>
+
+            <label for="electronics">Digital Electronics:</label>
+            <input type="number" id="electronics" name="electronics" min="0" max="100" required><br>
+
+            <label for="javaLab">Java Programming Lab:</label>
+            <input type="number" id="javaLab" name="javaLab" min="0" max="100" required><br>
+
+            <label for="databaseLab">Database Lab:</label>
+            <input type="number" id="databaseLab" name="databaseLab" min="0" max="100" required><br>
+
+            <label for="electronicsLab">Digital Electronics Lab:</label>
+            <input type="number" id="electronicsLab" name="electronicsLab" min="0" max="100" required><br>
+
+            <button type="submit">Generate Marksheet</button>
+        </form>
+
+        <div id="marksheetOutput"></div>
+    </div>
+
+    <script>
+        document.getElementById('marksheetForm').addEventListener('submit', function(event) {
+            event.preventDefault();
+            var java = parseInt(document.getElementById('java').value);
+            var networks = parseInt(document.getElementById('networks').value);
+            var database = parseInt(document.getElementById('database').value);
+            var law = parseInt(document.getElementById('law').value);
+            var electronics = parseInt(document.getElementById('electronics').value);
+            var javaLab = parseInt(document.getElementById('javaLab').value);
+            var databaseLab = parseInt(document.getElementById('databaseLab').value);
+            var electronicsLab = parseInt(document.getElementById('electronicsLab').value);
+
+            var totalMarks = java + networks + database + law + electronics + javaLab + databaseLab + electronicsLab;
+            var percentage = (totalMarks / 800) * 100;
+
+            var output = "<h2>LMC College - Marksheet</h2>";
+            output += "<table>";
+            output += "<tr><th>Subject</th><th>Marks Obtained</th><th>Status</th></tr>";
+            output += "<tr><td>Java Programming</td><td>" + java + "</td><td class='" + (java >= 40 ? 'pass' : 'fail') + "'>" + (java >= 40 ? 'Pass' : 'Fail') + "</td></tr>";
+            output += "<tr><td>Computer Networks</td><td>" + networks + "</td><td class='" + (networks >= 40 ? 'pass' : 'fail') + "'>" + (networks >= 40 ? 'Pass' : 'Fail') + "</td></tr>";
+            output += "<tr><td>Database System</td><td>" + database + "</td><td class='" + (database >= 40 ? 'pass' : 'fail') + "'>" + (database >= 40 ? 'Pass' : 'Fail') + "</td></tr>";
+            output += "<tr><td>E-commerce and Cyber Law</td><td>" + law + "</td><td class='" + (law >= 40 ? 'pass' : 'fail') + "'>" + (law >= 40 ? 'Pass' : 'Fail') + "</td></tr>";
+            output += "<tr><td>Digital Electronics</td><td>" + electronics + "</td><td class='" + (electronics >= 40 ? 'pass' : 'fail') + "'>" + (electronics >= 40 ? 'Pass' : 'Fail') + "</td></tr>";
+            output += "<tr><td>Java Programming Lab</td><td>" + javaLab + "</td><td class='" + (javaLab >= 40 ? 'pass' : 'fail') + "'>" + (javaLab >= 40 ? 'Pass' : 'Fail') + "</td></tr>";
+            output += "<tr><td>Database Lab</td><td>" + databaseLab + "</td><td class='" + (databaseLab >= 40 ? 'pass' : 'fail') + "'>" + (databaseLab >= 40 ? 'Pass' : 'Fail') + "</td></tr>";
+            output += "<tr><td>Digital Electronics Lab</td><td>" + electronicsLab + "</td><td class='" + (electronicsLab >= 40 ? 'pass' : 'fail') + "'>" + (electronicsLab >= 40 ? 'Pass' : 'Fail') + "</td></tr>";
+            output += "</table>";
+            output += "<p>Total Marks: " + totalMarks + "/800</p>";
+            output += "<p>Percentage: " + percentage.toFixed(2) + "%</p>";
+
+            document.getElementById('marksheetOutput').innerHTML = output;
+        });
+    </script>
+</body>
+</html>

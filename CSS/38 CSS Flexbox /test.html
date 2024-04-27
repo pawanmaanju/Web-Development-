@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>College Marksheet</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        .container {
+    width: 80%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.marksheet {
+    width: 100%;
+    margin: 20px auto;
+    border-collapse: collapse;
+}
+
+.marksheet th, 
+.marksheet td {
+    border: 1px solid #ddd;
+    padding: 10px;
+}
+
+.cie, .ese {
+    text-align: center;
+}
+
+.cie th:nth-child(2),
+.cie th:nth-child(3),
+.ese th:nth-child(4),
+.ese th:nth-child(5),
+.ese th:nth-child(7) {
+    width: 25%;
+}
+
+.result {
+    font-weight: bold;
+    margin-top: 20px;
+}
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>Result Declared on: 09-Feb-24, Re-eval Declared on: 23-Apr-24</h2>
+        <h3>BCA Semester III, Examination 2023, Winter (Main/ATKT)</h3>
+
+        <div class="student-info">
+            <p><strong>Roll No.:</strong> 223501145</p>
+            <p><strong>Name:</strong> PAWAN</p>
+            <p><strong>Course:</strong> BCA Semester III</p>
+        </div>
+
+        <table class="marksheet">
+            <thead>
+                <tr>
+                    <th rowspan="2">Subject</th>
+                    <th colspan="3" class="cie">CIA</th>
+                    <th colspan="4" class="ese">ESE</th>
+                    <th rowspan="2">Total Marks</th>
+                </tr>
+                <tr>
+                    <th>MAX</th>
+                    <th colspan="2">Obtained</th>
+                    <th>MAX</th>
+                    <th colspan="2">Obtained</th>
+                    <th>Min</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>BCA311</td>
+                    <td>20</td>
+                    <td colspan="2">AB</td>
+                    <td>80</td>
+                    <td colspan="2">40</td>
+                    <td>40</td>
+                    <td>100</td>
+                </tr>
+                <tr>
+                    <td>BCA312</td>
+                    <td>20</td>
+                    <td colspan="2">AB</td>
+                    <td>80</td>
+                    <td colspan="2">38</td>
+                    <td>#</td>
+                    <td>100</td>
+                </tr>
+                <tr>
+                    <th colspan="2">Grand Total</th>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td>800</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <p class="result">Result: SCG</p>
+    </div>
+</body>
+</html>
