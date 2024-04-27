@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact</title>
+    <style>
+      :root {
+        --color: rgb(255, 255, 255);
+        --bgcolor: rgb(255, 89, 139);
+        /* --bbg: rgb(48, 55, 97); */
+        --bbg: linear-gradient(
+          to bottom right,
+          rgb(25, 31, 97),
+          rgb(48, 55, 97)
+        );
+        --inback: rgb(81, 91, 132);
+
+        --ffm: poppins;
+      }
+      body {
+        background: var(--bgcolor);
+        font-family: var(--ffm);
+      }
+      .mainbox {
+        border: 2px solid black;
+        border-radius: 12px;
+        box-shadow: 2px 03px 20px black;
+        background-image: var(--bbg);
+        padding-bottom: 20px;
+      }
+
+      form {
+        padding-left: 150px;
+        padding-top: 50px;
+      }
+      .heading {
+        color: var(--color);
+        text-shadow: 1px 2px 3px black;
+        text-align: center;
+      }
+      .box input {
+        border-radius: 7px;
+        background-color: var(--inback);
+        border: none;
+        /* color: aqua; */
+
+        
+
+        /* box-shadow: 1px 03px 20px black; */
+
+        margin: 4px;
+        margin-left: 20px;
+      }
+      .name input {
+        
+        padding: 1vb;
+        
+        /* padding-right: -150px; */
+      }
+      .email input {
+        padding: 1vb;
+        /* padding-right: 50px; */
+      }
+      .phone input {
+        padding: 5;
+        /* padding-right: 50px; */
+      }
+      .MSG input {
+        padding: 5px;
+
+        padding-bottom: 9vh;
+        padding-right: 31vw;
+      }
+      ::placeholder {
+        color: var(--color);
+        font-family: var(--ffm);
+        font-size: 12px;
+        padding: 3px;
+        /* text-shadow: 1px 1px 3px black; */
+
+        /* opacity: 1; Firefox */
+      }
+      .mainbox p:first-child {
+        color: var(--bgcolor);
+        font-weight: bolder;
+        font-size: 20px;
+        padding-left: 20px;
+ 
+
+      }
+      .mainbox p {
+        color: var(--color);
+        padding-left: 20px;
+
+      }
+
+      .info p {
+        color: var(--bbg);
+        font-weight: bold;
+      }
+      .info label {
+        font-size: 18px;
+        font-weight: 600;
+        padding: 10px;
+        color: var(--color);
+      }
+      .imgc {
+        width: 20px;
+        margin-top: 20px;
+        
+      }
+      .Insta{
+      }
+      .call {
+        padding: 20px;
+
+      }
+      .bt {
+        border-radius: 8px;
+        margin-top: 20px;
+        padding: 10px;
+      }
+      .btn {
+        padding-left: 15vb;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="heading">
+      <h1 class="heading">Contact us</h1>
+    </div>
+    <div class="padding">
+      <div class="mainbox">
+        <!-- <form action="post"> -->
+          <p>Just say Hello !</p>
+          <p>Let us know more about you !</p>
+          <div class="name box">
+            <input type="text" placeholder="First Name" />
+            <input type="text" placeholder="Last Name" />
+          </div>
+          <div class="email box">
+            <!-- <p>Your Email</p> -->
+          </div>
+          <div class="email Phone box">
+            <input type="email" placeholder="Email" />
+            <input
+              type="tel"
+              id="phone"
+              name="phone"
+              placeholder="Phone"
+              pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}"
+            />
+            <!-- <p>Subject</p> -->
+          </div>
+          <div class="MSG box">
+            <!-- <p>Message</p> -->
+            <input type="text" placeholder="Massage" />
+          </div>
+          <div class="btn">
+            <button class="bt" onclick="location.href='tq.html';" >Submit</button>
+          </div>
+        </form>
+      </div>
+      <div class="info">
+        <p>Contact Information</p>
+        <img
+          class="imgc"
+          src="https://icons.veryicon.com/png/o/miscellaneous/the-star-of-pai-da-xing/call-26.png"
+          alt=""
+        />
+        <label class="Call" for="phone">call US : +919119355372</label>
+        <br>
+         
+        <img  class="imgc" src="https://upload.wikimedia.org/wikipedia/commons/2/28/Instagram_logo.png" alt="">
+        <label class="Insta" for="Insta">Instagram: pawanmaanju_29</label>
+      </div>
+    </div>
+  </body>
+</html>
