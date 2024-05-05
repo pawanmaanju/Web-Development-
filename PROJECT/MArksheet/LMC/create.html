@@ -3,16 +3,16 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>LMC College  - Marksheet</title>
+    <title>LMC College - Marksheet</title>
     <!-- Style of mark sheet -->
     <style>
-
       body {
         font-family: Arial, sans-serif;
         background-color: #f0f0f0;
         margin: 0;
         padding: 0;
       }
+      /* container */
       .container {
         width: 80%;
         margin: 20px auto;
@@ -73,31 +73,38 @@
         color: green;
       }
       h4 {
-       display: block;
-    margin-block-start: 1.33em;
-    margin-block-end: 1.33em;
-    margin-inline-start: 0px;
-    margin-inline-end: 0px;
-    font-weight: bold;
-    unicode-bidi: isolate;
-    border: 2px solid black;
-    border-style: double;
-    padding: 10px;
-    background: #9999ff;
-}
+        display: block;
+        margin-block-start: 1.33em;
+        margin-block-end: 1.33em;
+        margin-inline-start: 0px;
+        margin-inline-end: 0px;
+        font-weight: bold;
+        unicode-bidi: isolate;
+        border: 2px solid black;
+        border-style: double;
+        padding: 10px;
+        background: #9999ff;
+      }
     </style>
   </head>
   <body>
     <div class="container">
       <h2>LMC College - Marksheet</h2>
-      
+
       <form id="marksheetForm">
-        <div class="student-info"> 
+        <div class="student-info">
           <label for="roll">Roll Number:</label>
-          <input type="number" id="roll" name="roll" min="0" max="" required><br>
+          <input
+            type="number"
+            id="roll"
+            name="roll"
+            min="0"
+            max=""
+            required
+          /><br />
 
           <label for="name">Student Name:</label>
-          <input type="text" id="name" name="name" required><br>
+          <input type="text" id="name" name="name" required /><br />
         </div>
 
         <label for="java">Java Programming:</label>
@@ -183,10 +190,9 @@
         <button type="submit">Generate Marksheet</button>
       </form>
       <!-- <p>This Mark sheet is fake Generate BY Search Maro </p> -->
-      
-      <div id="marksheetOutput">
 
-        <p>This Marksheet is fake Generate BY Search Maro </p>
+      <div id="marksheetOutput">
+        <p>This Marksheet is fake Generate BY Search Maro</p>
       </div>
     </div>
 
@@ -195,8 +201,8 @@
         .getElementById("marksheetForm")
         .addEventListener("submit", function (event) {
           event.preventDefault();
-          var rollNumber = parseInt(document.getElementById('roll').value);
-          var studentName = document.getElementById('name').value;
+          var rollNumber = parseInt(document.getElementById("roll").value);
+          var studentName = document.getElementById("name").value;
           var java = parseInt(document.getElementById("java").value);
           var networks = parseInt(document.getElementById("networks").value);
           var database = parseInt(document.getElementById("database").value);
@@ -225,7 +231,7 @@
 
           var output = "<h2>LMC College - Marksheet</h2>";
           var output = "<h2>BCA Semester III, Examination 2023, Winter</h2>";
-             output += `<h4>Roll Number:<tr><td> ${rollNumber}</td></tr></h4>`;
+          output += `<h4>Roll Number:<tr><td> ${rollNumber}</td></tr></h4>`;
           output += `<h4><tr><td>Student Name: ${studentName}</tr></td></h4>`;
           output += "<table>";
           output +=
@@ -294,10 +300,11 @@
             "'>" +
             (electronicsLab >= 40 ? "Pass" : "Fail") +
             "</td></tr>";
-         
+
           output += "<td>Total Marks: " + totalMarks + "/800</td>";
-          output += "<tr><td>Percentage: " + percentage.toFixed(2) + "%</td></tr>";
- output += "</table>";
+          output +=
+            "<tr><td>Percentage: " + percentage.toFixed(2) + "%</td></tr>";
+          output += "</table>";
           document.getElementById("marksheetOutput").innerHTML = output;
         });
     </script>
