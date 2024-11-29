@@ -1,0 +1,13 @@
+      /* External Css */
+
+h3{
+   border: solid 2px;
+   text-align: center;
+
+
+}
+
+#heading2{
+   color:darkgoldenrod; /* Third Priority */
+   font-size: 18px;
+}

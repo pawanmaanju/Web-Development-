@@ -9,17 +9,26 @@ and observe priority. -->
     <link rel="stylesheet" href="02_Style.css">
     <title>Div & Style Tag</title>
     <Style>
+        /* internal Css */
         #heading{
             font-family:Verdana, Geneva, Tahoma, sans-serif;
+        }
+        #heading2{
+            color:rgb(255, 102, 0) ; /* Second Priority */
+            font-size: 18px;
         }
     </Style>
 </head>
 <body>
     <div id="heading">
-     <h1 style="color: red;">Hello Everyone</h1> <!--inline css -->
-        <h2>Welcome To Search Maro</h2>
+        <h1 style="color: red;">Hello Everyone</h1> <!--inline css -->
+        <h2>Welcome To Search Maro</h2>    
         <h3>Thanks For Visiting</h3>
         
+    </div>
+    <div id="heading2" style="color:darkturquoise ;font-size: 8px;">   <!-- First priority -->
+       
+        <h1>www.searchmaro.in </h1>
     </div>
 </body>
 </html>
